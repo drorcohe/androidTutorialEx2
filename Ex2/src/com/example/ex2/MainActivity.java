@@ -70,10 +70,9 @@ public class MainActivity extends Activity {
 		});
         
         if (adapter == null) {
-        	adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1);
+        	adapter = new ArrayAdapter<String>(this, R.layout.simple_entry, R.id.text1);
         }
-        mLogList.setAdapter(adapter);
-        
+        mLogList.setAdapter(adapter);        
         addLineToLog("onCreate");
     }
     
@@ -148,25 +147,11 @@ public class MainActivity extends Activity {
 			Toast toast = Toast.makeText(this, "invalid phone number", Toast.LENGTH_SHORT);
 			toast.show();
 		}
-		
 	}
-    
-    private void showPopup() {
-    	AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-    	alertDialog.setTitle("Simple Dialog");
-    	alertDialog.setMessage("This is a simple dialog");
-    	alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
-			
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				// do nothing
-			}
-		});
-    	alertDialog.show();
-    }
     
     private void addLineToLog(String line) {
     	adapter.add(line);
+    	mLogList.setSelection(mLogList.getCount() - 1);
     }
     
     private void clearLog() {

@@ -1,26 +1,23 @@
-*.apk
+
+# Java class files
 *.class
-*.dll
-bin/*
-Ex2/bin/classes.dex
-Ex2/bin/classes/com/example/ex2/MainActivity$2.class
-Ex2/bin/classes/com/example/ex2/MainActivity$3.class
-Ex2/bin/classes/com/example/ex2/MainActivity$4.class
-Ex2/bin/classes/com/example/ex2/MainActivity$5.class
-Ex2/bin/classes/com/example/ex2/MainActivity.class
-Ex2/bin/classes/com/example/ex2/R$id.class
-Ex2/bin/classes/com/example/ex2/R$layout.class
-Ex2/bin/classes/com/example/ex2/R$menu.class
-Ex2/bin/classes/com/example/ex2/R$string.class
-Ex2/bin/classes/com/example/ex2/R$style.class
-Ex2/bin/classes/com/example/ex2/MainActivity$4.class
-Ex2/bin/classes/com/example/ex2/MainActivity$2.class
-Ex2/bin/classes/com/example/ex2/MainActivity$3.class
-Ex2/bin/classes/com/example/ex2/MainActivity$4.class
-Ex2/bin/classes/com/example/ex2/MainActivity$5.class
-Ex2/bin/classes/com/example/ex2/MainActivity.class
-Ex2/bin/classes/com/example/ex2/R$id.class
-Ex2/bin/classes/com/example/ex2/R$layout.class
-Ex2/bin/classes/com/example/ex2/R$menu.class
-Ex2/bin/classes/com/example/ex2/R$string.class
-Ex2/bin/classes/com/example/ex2/R$style.class
+
+# built application files
+*.apk
+*.ap_
+*.jar
+
+# generated files
+bin/
+gen/
+classes/
+gen-external-apklibs/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+.metadata
+.settings
