@@ -49,10 +49,9 @@ public class MainActivity extends Activity {
 			}
 		});
         mPopup.setOnClickListener(new OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
-				showPopup();
+				openDialog();
 			}
 		});
         mDial.setOnClickListener(new OnClickListener() {
@@ -129,6 +128,11 @@ public class MainActivity extends Activity {
     
     private void openPhoneNumActivity() {
     	Intent intent = new Intent(this, SetPhoneNumberActivity.class);
+		startActivityForResult(intent, REQUEST_PHONE_NUM);
+    }
+    
+    private void openDialog() {
+    	Intent intent = new Intent(this, CostumDialogActivity.class);
 		startActivityForResult(intent, REQUEST_PHONE_NUM);
     }
     
