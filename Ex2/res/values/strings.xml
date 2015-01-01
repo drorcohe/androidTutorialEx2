@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ex2</string>
+    <string name="btn_clear_log">Clear log</string>
+    <string name="phone_init_text">Phone number goes here </string>
+	<string name="btn_popup">Popup</string>
+	<string name="btn_dial">Dial</string>
+	<string name="btn_enter_number">Set Num</string>
+	<string name="text_log"><b>Log:</b></string>
+	<string name="text_enter_num">Enter Phone Number Here:</string>
+	<string name="btn_phone_num_ok">Done</string>
+	
+</resources>
